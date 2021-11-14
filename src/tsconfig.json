@@ -5,8 +5,7 @@
     "baseUrl": "./",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "lib": ["dom", "es2017"],
-    "jsx": "react"
+    "lib": ["dom", "es2017"]
   }
 }
 
