@@ -12,8 +12,20 @@ export const DataType = {
             if (o === undefined || o === null) return o;
             return parseInt(String(o), 10);
         }
-    })
-
+    }),
+    LONG: () => null,
+    FLOAT: () => null,
+    DOUBLE: () => null,
+    STRING: () => null,
+    TEXT: () => null,
+    PASSWORD: () => null,
+    ENUM: () => null,
+    JSON: () => null,
+    BASE64: () => null,
+    BINARY: () => null,
+    BOOLEAN: () => null,
+    DATEONLY: () => null,
+    DATETIME: () => null
 };
 
 export default DataType;
