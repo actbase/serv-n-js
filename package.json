@@ -1,0 +1,72 @@
+{
+  "name": "@actbase/serv-n-js",
+  "version": "2.0.0",
+  "description": "NodeJS API Server Framework",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "author": {
+    "name": "Actbase LLC",
+    "email": "project@actbase.io"
+  },
+  "scripts": {
+    "build:src": "rm -rf ./lib && tsc -p src/tsconfig.json && babel lib --out-dir lib",
+    "build": "npm run build:src",
+    "prepublish": "npm run build",
+    "localinstall": "npm run build && cp -r ./lib /Users/suhanmoon/Projects/showket/showket-serv/node_modules/@actbase/node-server/"
+  },
+  "license": "MIT",
+  "keywords": [
+    "nodejs"
+  ],
+  "homepage": "https://github.com/actbase/node-server",
+  "bugs": {
+    "url": "https://github.com/actbase/node-server/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/actbase/node-server.git"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.1.0",
+    "@koa/multer": "^3.0.0",
+    "@koa/router": "^10.1.1",
+    "axios": "^0.24.0",
+    "cron": "^1.8.2",
+    "crypto-js": "^3.3.0",
+    "firebase-admin": "^10.0.0",
+    "immer": "^9.0.6",
+    "koa": "^2.13.4",
+    "koa-jwt": "^4.0.3",
+    "koa2-swagger-ui": "^5.3.0",
+    "lodash": "^4.17.21",
+    "multer": "^1.4.3",
+    "node-cache": "^5.1.2",
+    "sequelize": "^6.9.0",
+    "socket.io": "^4.3.2",
+    "socket.io-adapter": "^2.3.2",
+    "socketio-jwt-auth": "^0.2.1",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/node": "^7.16.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.16.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-inline-import-data-uri": "^1.0.1",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "jest": "^27.3.1",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.4.1",
+    "ts-jest": "^27.0.7",
+    "ts-node": "^10.4.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.4"
+  }
+}
